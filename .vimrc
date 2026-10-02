@@ -5,6 +5,8 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'NLKNguyen/papercolor-theme'
 
 Plugin 'fatih/vim-go'
 Plugin 'pangloss/vim-javascript'
@@ -14,7 +16,7 @@ Plugin 'scrooloose/syntastic'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 Plugin '907th/vim-auto-save'
 
@@ -23,10 +25,9 @@ filetype plugin indent on
 
 set backspace=2
 
-" ir_black color settings
 set t_Co=256
-set background=dark
-colorscheme ir_black256
+set background=light
+colorscheme papercolor
 syntax on
 
 " Keyboard shortcuts:
