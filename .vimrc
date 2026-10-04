@@ -1,27 +1,20 @@
+set nocompatible
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+call plug#begin('~/.vim/plugged')
+Plug 'NLKNguyen/papercolor-theme'
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'NLKNguyen/papercolor-theme'
+Plug 'fatih/vim-go'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
-Plugin 'fatih/vim-go'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+Plug 'vim-syntastic/syntastic'
 
-Plugin 'scrooloose/syntastic'
+Plug 'preservim/nerdtree'
+Plug 'jiangmiao/auto-pairs'
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'jiangmiao/auto-pairs'
-" Plugin 'Valloric/YouCompleteMe'
+Plug '907th/vim-auto-save'
 
-Plugin '907th/vim-auto-save'
-
-call vundle#end()
-filetype plugin indent on  
+call plug#end()
 
 set backspace=2
 
